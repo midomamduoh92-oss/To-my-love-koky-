@@ -1,126 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>إلى أغلى إنسانة ❤️</title>
-    <style>
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background: radial-gradient(circle, #ffdee9 0%, #b5fffc 100%); 
-            display: flex; justify-content: center; align-items: center; 
-            min-height: 100vh; margin: 0; overflow-x: hidden;
-        }
-        .card { 
-            background: rgba(255, 255, 255, 0.9); 
-            padding: 25px; border-radius: 30px; 
-            box-shadow: 0 20px 50px rgba(0,0,0,0.1); 
-            text-align: center; width: 90%; max-width: 450px; 
-            backdrop-filter: blur(10px); border: 2px solid #fff;
-            position: relative; z-index: 10; margin: 20px auto;
-        }
-        h2 { color: #d32f2f; margin-bottom: 15px; font-size: 22px; }
-        input { 
-            width: 85%; padding: 15px; margin: 15px 0; 
-            border: 2px solid #ffcdd2; border-radius: 15px; 
-            outline: none; text-align: center; font-size: 18px;
-        }
-        button { 
-            background: #ff4d6d; color: white; border: none; 
-            padding: 15px; border-radius: 15px; cursor: pointer; 
-            font-size: 18px; font-weight: bold; width: 100%;
-            transition: 0.3s; box-shadow: 0 5px 15px rgba(255, 77, 109, 0.4);
-        }
-        button:hover { background: #ff758f; transform: scale(1.02); }
-        #secretContent { display: none; animation: fadeIn 1.5s ease; max-height: 80vh; overflow-y: auto; padding-right: 5px; }
-        
-        /* تحسين شكل الرسالة الطويلة */
-        .message-box { 
-            text-align: right; line-height: 1.8; color: #444; 
-            font-size: 16px; margin: 15px 0; white-space: pre-line;
-        }
-        
-        .heart-icon { color: #ff4d6d; font-size: 50px; animation: beat 1s infinite; }
-        .floating-heart {
-            position: absolute; color: #ff4d6d; opacity: 0.5;
-            animation: float 4s linear infinite; bottom: -20px;
-        }
-        @keyframes beat { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-        @keyframes float { to { transform: translateY(-100vh) rotate(360deg); opacity: 0; } }
-        
-        .main-img { 
-            width: 100%; border-radius: 20px; margin: 15px 0; 
-            border: 3px solid #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        /* ستايل السكرول بار عشان الرسالة طويلة */
-        #secretContent::-webkit-scrollbar { width: 5px; }
-        #secretContent::-webkit-scrollbar-thumb { background: #ff4d6d; border-radius: 10px; }
-    </style>
-</head>
-<body>
-
-<audio id="loveSong" preload="auto">
-    <source src="https://farsasong.xyz/uploads/songs/Amr_Diab_-_Kol_Hayati.mp3" type="audio/mpeg">
-</audio>
-
-<div class="card" id="loginCard">
-    <div class="heart-icon">❤️</div>
-    <h2>يا روحي دخلي الباسورد عشان تشوفي المفاجأة 🙊</h2>
-    <input type="text" id="passInput" placeholder="اكتبي التاريخ (يوم/شهر)..">
-    <button onclick="checkPass()">افتحي قلبي ✨</button>
-</div>
-
-<div class="card" id="secretContent">
-    <div class="heart-icon">💖</div>
-    <h2>إلى "كوكي" قطعة من قلبي ❤️</h2>
-    
-    <img src="http://googleusercontent.com/generated_image_content/0" class="main-img" alt="Love Photo">
-
-    <div class="message-box">
-        حابب اقولك اني بجد بحبك و وجودك ف حياتي نعمه متمناش انها تروح مني ف يوم من الايام لاني بجد مقدرش اعيش من غيرك ثانيه بس عاوز اقولك اني بجد يبختي بيكي لأنك جميله اوييي بجددد ومكنش متخيل ان الحب ده كله يطلع مني ليكي بجد عمري مقدر اوصفك او اوصف قد اي ضحكتك حلوه وبحبها اويي  وعاوز اقولك ال حسيته معاكي وال عشته معاكي عمري ماعرف اعمله مع حد تاني ولا هيحصل اصلاا وعاوز اقولك انك بجد وجودك جنبي فارق كتيرر ومهون عليا اكتر وتقريبا دي الحاجه ال مصبراني  وربنا ميحرمنيش منك ابدااا ينور عيني ومش عاوزك تيجي ف يوم تزعلي مني لاني مقدرش علي زعلك اصلا ولو زعلتك بيبقا غصب عني  وربنا يبعد عننا العين ويديمك ليا يحببتي  وعاوز اقولك لو الزمن رجع بيا مليون مره هختارك انتي برضو فكل مره.
-        عارفه بقا يكوكي لما بيقولو في حاجات حلوه كده بتيجي مره واحده ف العمر كنت بسمع الجمله دي كتيرر اويي ومش بفهمها ولا بصدقها خالصص بس دلوقتي صدقتها خلاصص عشان انتي الحاجه الحلوه دي ال مستحيل تتكرر تاني عشان مستحيل ابعد عنك اساسا وبجد يكوكي انتي اجمل صدفه حصلت ف حياتي دي كلها جيتي عوضتي حاجات كتيرر وصلحتي حاجات اكترر انتي مبوظتهاش اساسا وعلي فكره انتي مش بس حببتي انتي اختي وصحبتي وكل دنيتي ال عايشها دي اصلا.
-        روح قلبي ال بتفهم من غير متكلم وال مطلعه ميتين اهلي بس بحبها برضو😂
-        وبجد يكوكي بقيت اعتبرك ضهر وسند وكل حاجه وبجد مصدر الأمان ال بحس بكل حاجه معاهااا وبلجأ ليها ديما استحملتي قرف وحاجات كتير وحشه كنت بعملها وكنتي معايا ف كل حاجه تقريبا..
-        بجد يكوكي وانا معاكي ببقا مش عاوز اي حاجه تاني كفايه صوت ضحتك ده عندي بالدنيا كلها وال فيهاا حرفياا وربنا يخليكي ليا ينور عيني وتفضلي جنبي كده ومعايا طولل العمرر ونبقا من نصيب بعض يارب.
-        وكمان عاوز اقولك فرحاننن اوييي بجد اني داخل رمضان وانا معايا اجمل بنت ف الدنيا واجمل عوض حرفيا هيبقي اول رمضان لينا مع بعض ومش اخر واحد ان شاء الله ربنا يخليكي ليا يروحيي ويديمك نعمه ف حياتي يارب رمضان داخل علينا اهووو ومش هيبقي علي لساني دعوه غير أن اشوفك مبسوطه وفرحانه ديما ومعايا علطول.
-        
-        May you always be with me my love forever 
-        Happy Valentine's Day to the most beautiful love in the world. 
-        ❤️❤️❤️❤️🏠🏠🏠
-    </div>
-    
-    <p style="font-size: 13px; color: #ff4d6d; font-weight: bold;">(اسمعي الأغنية للأخر ❤️)</p>
-</div>
-
-<script>
-    function createHeart() {
-        const heart = document.createElement('div');
-        heart.classList.add('floating-heart');
-        heart.innerHTML = '❤️';
-        heart.style.left = Math.random() * 100 + 'vw';
-        heart.style.animationDuration = Math.random() * 2 + 3 + 's';
-        document.body.appendChild(heart);
-        setTimeout(() => heart.remove(), 5000);
-    }
-    setInterval(createHeart, 400);
-
-    function checkPass() {
-        const pass = document.getElementById('passInput').value;
-        const correctPass = "15/6"; 
-        const song = document.getElementById('loveSong');
-
-        if (pass === correctPass) {
-            document.getElementById('loginCard').style.display = 'none';
-            document.getElementById('secretContent').style.display = 'block';
-            song.play().catch(e => console.log("Audio play blocked by browser"));
-        } else {
-            alert("الباسورد غلط.. حاولي تاني يكوكي 😂❤️");
-        }
-    }
-</script>
-
-</body>
-  </html>
-  
